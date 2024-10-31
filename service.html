@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nexus Partners || Nos services</title>
+    <title>Nexus Partners || Acceuil</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -15,10 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link href="scss/bootstrapicons-1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -37,9 +38,23 @@
     <div class="container-xxl bg-white p-0">
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">by Nexus Partners ...</span>
+        <div class="loading-container">
+            <div class="loading-text">
+                <span>N</span>
+                <span>E</span>
+                <span>X</span>
+                <span>U</span>
+                <span>S</span>
+            </div>
+            <div class="loading-text">
+                <span>P</span>
+                <span>A</span>
+                <span>R</span>
+                <span>T</span>
+                <span>N</span>
+                <span>E</span>
+                <span>R</span>
+                <span>S</span>
             </div>
         </div>
         <!-- Spinner End -->
@@ -47,24 +62,26 @@
 
         <!-- En tete -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">          
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="images/logos/logonp.png" alt="Logo" class="me-2 ">
                 </a>
-            
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div  class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0" >
-                        <a href="index.html" class="nav-item nav-link ">Bienvenue</h6></a>
-                        <a href="service.html" class="nav-item nav-link active">Nos Services</h6></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Bienvenue</a>
+                        <a href="service.html" class="nav-item nav-link">Nos Services</a>
                         <a href="project.html" class="nav-item nav-link">Nos Projets</a>
                         <a href="about.html" class="nav-item nav-link">Qui Sommes-Nous ?</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Portails</a>
                             <div class="dropdown-menu m-0">
-                                <a href="outils.html" class="dropdown-item" >Outils</a>
+                                <a href="portails/outils/outils.html" class="dropdown-item">Outils</a>
+                                <a href="portails/tutoriel/tutoriel.html" class="dropdown-item">Tutoriels</a>
+                                <a href="portails/boutique/boutique.html" class="dropdown-item">boutique</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +92,6 @@
 
         <!-- section 1-->
         <style>
-
             .h-100vh {
                 height: 100vh;
             }
@@ -105,7 +121,8 @@
             }
 
             .bg-overlay {
-                background: rgba(0, 0, 0, 0.651); /* Filtre noir avec une opacité de 80% */
+                background: rgba(0, 0, 0, 0.651);
+                /* Filtre noir avec une opacité de 80% */
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -113,7 +130,8 @@
                 bottom: 0;
                 width: 100%;
                 height: 100%;
-                z-index: 1; /* Mettre au-dessus de l'image mais en-dessous du texte */
+                z-index: 1;
+                /* Mettre au-dessus de l'image mais en-dessous du texte */
             }
 
             .header_title {
@@ -129,7 +147,6 @@
                 font-size: 18px;
                 max-width: 600px;
             }
-
         </style>
         <section class="home-bg section h-100vh" id="home">
             <div class="bg-overlay"></div> <!-- Le filtre noir n'affecte que l'image -->
@@ -138,16 +155,27 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
-                                <div class="text-white text-center" style="position: relative; z-index: 2;"> <!-- Le texte passe au-dessus du filtre -->
-                                    <h1 class="section-title mb-0 mt-3 text-center text-white mx-auto tech-title">Nexus Partners || Nos services </h1>
-                                    <p class="header_subtitle text-white mx-auto mt-3 mb-0" style="text-align: justify"><br>Nexus Partners offre une gamme complète de services comprenant le recrutement de talents, la création de sites web sur mesure, et l'installation électrique résidentielle et industrielle. Nous développons également des solutions basées sur l'intelligence artificielle, proposons des stratégies de marketing digital, et gérons la publication et la promotion d'événements. Nos services de formation et de conseil en stratégie d'entreprise complètent notre offre, faisant de nous un partenaire idéal pour accompagner les entreprises dans leur croissance et leur transformation digitale.</p>                                   
+                                <div class="text-white text-center" style="position: relative; z-index: 2;">
+                                    <!-- Le texte passe au-dessus du filtre -->
+                                    <h1 class="section-title mb-0 mt-3 text-center text-white mx-auto tech-title">Nexus
+                                        Partners || Nos services </h1>
+                                    <p class="header_subtitle text-white mx-auto mt-3 mb-0" style="text-align: justify">
+                                        <br>Nexus Partners offre une gamme complète de services comprenant le
+                                        recrutement de talents, la création de sites web sur mesure, et l'installation
+                                        électrique résidentielle et industrielle. Nous développons également des
+                                        solutions basées sur l'intelligence artificielle, proposons des stratégies de
+                                        marketing digital, et gérons la publication et la promotion d'événements. Nos
+                                        services de formation et de conseil en stratégie d'entreprise complètent notre
+                                        offre, faisant de nous un partenaire idéal pour accompagner les entreprises dans
+                                        leur croissance et leur transformation digitale.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <!-- section 1-->
 
@@ -166,7 +194,8 @@
                                 <i class="fa fa-code fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Web & App</h5>
-                            <p>Conception et Développement de Sites Web, Modernisation et optimisation Sites Existants, Maintenance de Sites Web, SEO et Optimisation</p>
+                            <p>Conception et Développement de Sites Web, Modernisation et optimisation Sites Existants,
+                                Maintenance de Sites Web, SEO et Optimisation</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Voir plus</a>
                         </div>
                     </div>
@@ -177,7 +206,8 @@
                                 <i class="fa fa-bolt fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Électricité</h5>
-                            <p>Installation Résidentielle, Installation Industrielle, Installation Photovoltaïque, Maintenance Électrique préventive et corrective, Systèmes de Sécurité</p>
+                            <p>Installation Résidentielle, Installation Industrielle, Installation Photovoltaïque,
+                                Maintenance Électrique préventive et corrective, Systèmes de Sécurité</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Voir plus</a>
                         </div>
                     </div>
@@ -188,7 +218,8 @@
                                 <i class="fa fa-brain fa-2x"></i>
                             </div>
                             <h5 class="mb-3">IA</h5>
-                            <p>Technologies de l'Intelligence Artificielle, Développement de Solutions IA, Analyse de Données, Chatbots, Assistance Virtuelle, Rédaction Web</p>
+                            <p>Technologies de l'Intelligence Artificielle, Développement de Solutions IA, Analyse de
+                                Données, Chatbots, Assistance Virtuelle, Rédaction Web</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Voir plus</a>
                         </div>
                     </div>
@@ -199,7 +230,8 @@
                                 <i class="fa fa-bullhorn fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Digital Marketing</h5>
-                            <p>Stratégie de Marketing Digital, SEO, Marketing de Contenu, Gestion des Publicités Sociaux, Email Marketing</p>
+                            <p>Stratégie de Marketing Digital, SEO, Marketing de Contenu, Gestion des Publicités
+                                Sociaux, Email Marketing</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Voir plus</a>
                         </div>
                     </div>
@@ -210,7 +242,8 @@
                                 <i class="fa fa-chalkboard-teacher fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Formation et Développement</h5>
-                            <p>Formations Techniques, Développement Personnel, Formation en Entrepreneuriat, E-Learning et Certification</p>
+                            <p>Formations Techniques, Développement Personnel, Formation en Entrepreneuriat, E-Learning
+                                et Certification</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Voir plus</a>
                         </div>
                     </div>
@@ -221,7 +254,8 @@
                                 <i class="fa fa-user-tie fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Recrutements</h5>
-                            <p>Recrutement de Talents, Chasse de Têtes, Évaluation et Tests, Intégration des Nouveaux Employés</p>
+                            <p>Recrutement de Talents, Chasse de Têtes, Évaluation et Tests, Intégration des Nouveaux
+                                Employés</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Voir plus</a>
                         </div>
                     </div>
@@ -229,7 +263,7 @@
             </div>
         </div>
         <!-- Service End -->
-        
+
         <!-- Testimonial Start 
         <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
@@ -308,13 +342,15 @@
                         <a class="btn btn-link" href="">Termes & Conditione</a>
                         <a class="btn btn-link" href="">Carieres</a>
                     </div>
-                    
+
                     <div class="col-md-6 col-lg-4">
                         <h5 class="text-white mb-4">Newsletter</h5>
                         <p> </p>
                         <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Insere ton email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Insere ton email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
                     </div>
                 </div>
@@ -323,8 +359,8 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Nexus Partners</a>, All Right Reserved. 
-								Designed By <a class="border-bottom" href="https://htmlcodex.com">Nexus Partners</a>
+                            &copy; <a class="border-bottom" href="#">Nexus Partners</a>, All Right Reserved.
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">Nexus Partners</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">

@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Nexus-tutoriel-ia </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../../images/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="../../scss/bootstrapicons-1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+
+        <!-- Spinner Start -->
+        <div class="loading-container">
+            <div class="loading-text">
+                <span>N</span>
+                <span>E</span>
+                <span>X</span>
+                <span>U</span>
+                <span>S</span>
+            </div>
+            <div class="loading-text">
+                <span>P</span>
+                <span>A</span>
+                <span>R</span>
+                <span>T</span>
+                <span>N</span>
+                <span>E</span>
+                <span>R</span>
+                <span>S</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- En tete -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="../../index.html" class="navbar-brand p-0">
+                    <img src="../../images/logos/logonp.png" alt="Logo" class="me-2 ">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="../../index.html" class="nav-item nav-link">Bienvenue</a>
+                        <a href="../../service.html" class="nav-item nav-link">Nos Services</a>
+                        <a href=".././project.html" class="nav-item nav-link">Nos Projets</a>
+                        <a href=".././about.html" class="nav-item nav-link">Qui Sommes-Nous ?</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Portails</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="outils.html" class="dropdown-item active">Outils</a>
+                                <a href="../tutoriel/tutoriel.html" class="dropdown-item">Tutoriels</a>
+                                <a href="../boutique/boutique.html" class="dropdown-item">boutique</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- En tete -->
+
+        <!-- section 1-->
+        <style>
+            .h-100vh {
+                height: 100vh;
+            }
+
+            .home-bg {
+                background-image: url(../../images/gallerie/abstract.jpg);
+                background-position: center center;
+                background-size: auto;
+                background-attachment: fixed;
+                position: relative;
+            }
+
+            .home-table-center {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .home-table {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            .header_btn span {
+                position: absolute;
+                top: 20px;
+            }
+
+            .bg-overlay {
+                background: rgba(1, 1, 24, 0.418);
+                /* Filtre noir avec une opacité de 80% */
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                /* Mettre au-dessus de l'image mais en-dessous du texte */
+            }
+
+            .header_title {
+                font-size: 52px;
+                font-weight: 700;
+                line-height: 1.2;
+                text-transform: capitalize;
+                color: #fdfafa;
+            }
+
+            .header_subtitle {
+                line-height: 2.0;
+                font-size: 18px;
+                max-width: 600px;
+            }
+        </style>
+        <section class="home-bg section h-100vh" id="home">
+            <div class="bg-overlay"></div>
+            <div class="home-table">
+                <div class="home-table-center">
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="text-white text-center" style="position: relative; z-index: 2;">
+                                    <h1 class="header_title mb-4">Nexus Partners | Outils</h1>
+                                    <p class="header_subtitle text-white mx-auto" style="text-align:justify">
+                                        Bienvenue dans notre espace "Outils", un carrefour numérique où sont rassemblées
+                                        des solutions modernes pour simplifier et améliorer votre quotidien numérique.
+                                        Dans cette section, vous trouverez des outils sélectionnés pour leur pertinence
+                                        et leur efficacité, couvrant divers domaines où l'intelligence artificielle (IA)
+                                        peut transformer vos activités.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 : Outils et Solutions -->
+        <style>
+            .categories-section {
+                padding: 60px 0;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95));
+                position: relative;
+                z-index: 3;
+            }
+
+            .categories-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .category-title {
+                text-align: center;
+                margin-bottom: 50px;
+                color: #2c3e50;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .categories-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+            }
+
+            .category-card {
+                background: white;
+                border-radius: 15px;
+                padding: 30px;
+                transition: all 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .category-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.3s ease;
+            }
+
+            .category-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            }
+
+            .category-card:hover::before {
+                transform: scaleX(1);
+            }
+
+            .category-icon {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: #0d6efd;
+                transition: all 0.3s ease;
+            }
+
+            .category-card:hover .category-icon {
+                transform: scale(1.1);
+            }
+
+            .category-name {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 15px;
+                color: #2c3e50;
+            }
+
+            .category-description {
+                color: #6c757d;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 768px) {
+                .categories-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .category-title {
+                    font-size: 2rem;
+                }
+            }
+
+            /* Animation d'apparition */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .category-card {
+                animation: fadeInUp 0.6s ease forwards;
+                opacity: 0;
+            }
+
+            .category-card:nth-child(1) {
+                animation-delay: 0.1s;
+            }
+
+            .category-card:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+
+            .category-card:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+
+            .category-card:nth-child(4) {
+                animation-delay: 0.4s;
+            }
+
+            .category-card:nth-child(5) {
+                animation-delay: 0.5s;
+            }
+        </style>
+        <section class="categories-section">
+            <div class="categories-container">
+                <h2 class="category-title">Nos Solutions Intelligentes</h2>
+
+                <div class="categories-grid">
+                    <!-- Productivité et gestion du temps -->
+                    <div class="category-card">
+                        <i class="fas fa-clock category-icon"></i>
+                        <h3 class="category-name">Productivité et gestion du temps</h3>
+                        <p class="category-description">
+                            Planification, automatisation des tâches et applications de gestion des calendriers,
+                            autant de moyens pour optimiser chaque minute de votre journée.
+                        </p>
+                    </div>
+
+                    <!-- Créativité et conception -->
+                    <div class="category-card">
+                        <i class="fas fa-paint-brush category-icon"></i>
+                        <h3 class="category-name">Créativité et conception</h3>
+                        <p class="category-description">
+                            Des logiciels de conception graphique aux outils de retouche et création audio-visuelle,
+                            l'IA donne un nouvel élan à l'inspiration artistique.
+                        </p>
+                    </div>
+
+                    <!-- Marketing et analyse de données -->
+                    <div class="category-card">
+                        <i class="fas fa-chart-line category-icon"></i>
+                        <h3 class="category-name">Marketing et analyse de données</h3>
+                        <p class="category-description">
+                            Analyses prédictives, segmentation avancée et recommandations marketing personnalisées,
+                            l'IA décuple les stratégies commerciales modernes.
+                        </p>
+                    </div>
+
+                    <!-- Sécurité informatique -->
+                    <div class="category-card">
+                        <i class="fas fa-shield-alt category-icon"></i>
+                        <h3 class="category-name">Sécurité informatique</h3>
+                        <p class="category-description">
+                            Surveillance des menaces, détection de vulnérabilités et solutions de sécurité avancées,
+                            l'IA protège les systèmes en temps réel.
+                        </p>
+                    </div>
+
+                    <!-- Automatisation et NLP -->
+                    <div class="category-card">
+                        <i class="fas fa-robot category-icon"></i>
+                        <h3 class="category-name">Automatisation et NLP</h3>
+                        <p class="category-description">
+                            De l'assistance virtuelle à la création de contenu automatisé, les modèles NLP
+                            révolutionnent la communication et la gestion des informations textuelles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 : Outils et Solutions -->
+        <style>
+            .tools-section {
+                padding: 80px 0;
+                background-image: url(../../images/gallerie/ai.png);
+                background-position: center center;
+                background-size: cover;
+                background-attachment: fixed;
+                position: relative;
+            }
+
+            .tools-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(1, 1, 24, 0.8);
+                /* Filtre noir de 80% */
+                z-index: 1;
+            }
+
+            .tools-section .container {
+                position: relative;
+                z-index: 2;
+            }
+
+            .filter-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+
+            .filter-button {
+                background: #0d6efd;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .filter-button:hover {
+                background: #0b5ed7;
+            }
+
+            .tool-card {
+                background: white;
+                border-radius: 15px;
+                padding: 25px;
+                margin-bottom: 30px;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .tool-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .tool-category {
+                color: #0d6efd;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .tool-item {
+                margin-bottom: 20px;
+                padding: 15px;
+                border-radius: 10px;
+                background: #f8f9fa;
+                transition: all 0.3s ease;
+            }
+
+            .tool-item:hover {
+                background: #e9ecef;
+            }
+
+            .tool-name {
+                color: #212529;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .tool-description {
+                font-size: 0.95rem;
+                color: #6c757d;
+                margin-bottom: 10px;
+            }
+
+            .tool-pros-cons {
+                display: flex;
+                gap: 20px;
+                font-size: 0.9rem;
+            }
+
+            .tool-pros,
+            .tool-cons {
+                flex: 1;
+            }
+
+            .pros-title,
+            .cons-title {
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .pros-title {
+                color: #198754;
+            }
+
+            .cons-title {
+                color: #dc3545;
+            }
+
+            .tool-link {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 5px 15px;
+                border-radius: 20px;
+                background: #0d6efd;
+                color: white;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .tool-link:hover {
+                background: #0b5ed7;
+                transform: translateX(5px);
+            }
+
+            .tool-cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+        </style>
+        <section class="tools-section h-500vh">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-5 text-center">
+                        <h2 class="header_title mb-4">Nos Solutions d'Intelligence Artificielle</h2>
+                        <p class="header_subtitle text-white mx-auto" style="text-align:justify">
+                            Découvrez notre sélection d'outils innovants pour optimiser votre productivité
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <span class="filter-button" onclick="filterTools('Productivité')">Productivité et Gestion du
+                        Temps</span>
+                    <span class="filter-button" onclick="filterTools('Créativité')">Créativité et Conception</span>
+                    <span class="filter-button" onclick="filterTools('Marketing')">Marketing et Analyse de
+                        Données</span>
+                    <span class="filter-button" onclick="filterTools('Sécurité')">Sécurité Informatique</span>
+                    <span class="filter-button" onclick="filterTools('Automatisation')">Automatisation et NLP</span>
+                    <span class="filter-button" onclick="filterTools('all')">Tous</span>
+                </div>
+
+                <!-- Tool Cards -->
+                <div class="tool-cards-container" id="toolCardsContainer">
+                    <!-- Productivité et Gestion du Temps -->
+                    <div class="tool-card" data-category="Productivité">
+                        <h3 class="tool-category">Productivité et Gestion du Temps</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Clockwise</h4>
+                            <p class="tool-description">Planificateur intelligent qui réorganise votre agenda pour
+                                maximiser les plages de travail sans distraction.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Optimisation automatique</li>
+                                        <li>✓ Améliore la productivité</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Période d'adaptation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.getclockwise.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Productivité">
+                        <h3 class="tool-category">Productivité et Gestion du Temps</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Notion AI</h4>
+                            <p class="tool-description">Gestion de projet assistée par IA, permettant de créer,
+                                organiser et partager des documents.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Intégration multi-usages</li>
+                                        <li>✓ Interface intuitive</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Complexité pour nouveaux utilisateurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.notion.so/product/ai" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Productivité">
+                        <h3 class="tool-category">Productivité et Gestion du Temps</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">RescueTime</h4>
+                            <p class="tool-description">Outil d'analyse du temps qui aide à comprendre et optimiser la
+                                gestion du temps de travail.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Améliore la concentration</li>
+                                        <li>✓ Analyse détaillée du temps</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Peut être intrusif pour certains utilisateurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.rescuetime.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <!-- Créativité et Conception -->
+                    <div class="tool-card" data-category="Créativité">
+                        <h3 class="tool-category">Créativité et Conception</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">DALL-E</h4>
+                            <p class="tool-description">Génère des images originales à partir de descriptions
+                                textuelles, idéal pour la conception rapide.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Créativité augmentée</li>
+                                        <li>✓ Facile à utiliser</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Limité aux descriptions textuelles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://openai.com/dall-e/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Créativité">
+                        <h3 class="tool-category">Créativité et Conception</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Canva AI</h4>
+                            <p class="tool-description">Plateforme de design avec IA qui propose des modèles et outils
+                                pour créer du contenu visuel de qualité.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Grande bibliothèque de modèles</li>
+                                        <li>✓ Facilité d'utilisation</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Outils avancés limités dans la version gratuite</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.canva.com/fr_fr/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Créativité">
+                        <h3 class="tool-category">Créativité et Conception</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">RunwayML</h4>
+                            <p class="tool-description">Outil de création multimédia assisté par IA, offrant des
+                                fonctionnalités de montage vidéo et de génération d'images.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Outils puissants de création</li>
+                                        <li>✓ Innovant et polyvalent</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Demande des ressources puissantes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://runwayml.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <!-- Marketing et Analyse de Données -->
+                    <div class="tool-card" data-category="Marketing">
+                        <h3 class="tool-category">Marketing et Analyse de Données</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">HubSpot</h4>
+                            <p class="tool-description">Plateforme intégrée de CRM avec des outils d'IA pour l'analyse
+                                et la gestion des campagnes marketing.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Analyse approfondie des données</li>
+                                        <li>✓ Facilité d'intégration</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Complexité pour les nouveaux utilisateurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.hubspot.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Marketing">
+                        <h3 class="tool-category">Marketing et Analyse de Données</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Google Analytics</h4>
+                            <p class="tool-description">Outil d'analyse de données permettant de suivre et optimiser les
+                                performances des campagnes digitales.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Outils avancés d'analyse</li>
+                                        <li>✓ Intégration facile avec Google Ads</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Courbe d'apprentissage élevée</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://analytics.google.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Marketing">
+                        <h3 class="tool-category">Marketing et Analyse de Données</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Sprout Social</h4>
+                            <p class="tool-description">Plateforme de gestion de réseaux sociaux avec IA pour l'analyse
+                                de l'engagement et des tendances.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Analyse détaillée de l'engagement</li>
+                                        <li>✓ Gestion simplifiée des réseaux sociaux</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Options limitées dans la version gratuite</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://sproutsocial.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <!-- Sécurité Informatique -->
+                    <div class="tool-card" data-category="Sécurité">
+                        <h3 class="tool-category">Sécurité Informatique</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Darktrace</h4>
+                            <p class="tool-description">Solution de cybersécurité utilisant l'IA pour détecter et
+                                répondre aux menaces en temps réel.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Détection proactive des menaces</li>
+                                        <li>✓ Intervention rapide et automatisée</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Coût élevé pour les petites entreprises</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.darktrace.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Sécurité">
+                        <h3 class="tool-category">Sécurité Informatique</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">CrowdStrike</h4>
+                            <p class="tool-description">Plateforme de protection des endpoints qui utilise l'IA pour
+                                analyser et bloquer les menaces.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Protection en temps réel</li>
+                                        <li>✓ Large base de données de menaces</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Dépendant de la connectivité réseau</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.crowdstrike.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Sécurité">
+                        <h3 class="tool-category">Sécurité Informatique</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">FireEye</h4>
+                            <p class="tool-description">Outil de cybersécurité avancé pour la détection, la prévention
+                                et la réponse aux cyberattaques.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Détection avancée des attaques</li>
+                                        <li>✓ Solutions de réponse rapide</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Coûteux pour les petites entreprises</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.fireeye.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <!-- Automatisation et NLP -->
+                    <div class="tool-card" data-category="Automatisation">
+                        <h3 class="tool-category">Automatisation et NLP</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">UiPath</h4>
+                            <p class="tool-description">Solution d'automatisation des processus métiers permettant aux
+                                entreprises de simplifier les tâches répétitives.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Automatisation des processus</li>
+                                        <li>✓ Interface conviviale</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Coûteux pour une implémentation complète</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://www.uipath.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Automatisation">
+                        <h3 class="tool-category">Automatisation et NLP</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">Zapier</h4>
+                            <p class="tool-description">Plateforme d'automatisation qui connecte différentes
+                                applications pour simplifier les workflows.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Connexion multi-plateformes</li>
+                                        <li>✓ Interface intuitive</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Limitations dans la version gratuite</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://zapier.com/" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-category="Automatisation">
+                        <h3 class="tool-category">Automatisation et NLP</h3>
+                        <div class="tool-item">
+                            <h4 class="tool-name">ChatGPT</h4>
+                            <p class="tool-description">Modèle NLP avancé pour créer des conversations naturelles,
+                                automatiser le support client et générer des idées de contenu.</p>
+                            <div class="tool-pros-cons">
+                                <div class="tool-pros">
+                                    <p class="pros-title">Avantages</p>
+                                    <ul class="list-unstyled">
+                                        <li>✓ Réponses naturelles et fluides</li>
+                                        <li>✓ Adaptable à divers cas d'usage</li>
+                                    </ul>
+                                </div>
+                                <div class="tool-cons">
+                                    <p class="cons-title">Inconvénients</p>
+                                    <ul class="list-unstyled">
+                                        <li>✗ Limitations dans la personnalisation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://openai.com/chatgpt" class="tool-link">Découvrir →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-white mb-4">Contactez-nous</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Cotono, Littoral,Bénin</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+229 96701733</p>
+                        <p><i class="fa fa-envelope me-3"></i>nexuscourriels@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-white mb-4">Navigateur</h5>
+                        <a class="btn btn-link" href="../../about.html">Qui sommes-nous</a>
+                        <a class="btn btn-link" href="">Contactez-nous</a>
+                        <a class="btn btn-link" href="">Politique de confidentialite</a>
+                        <a class="btn btn-link" href="">Termes & Conditione</a>
+                        <a class="btn btn-link" href="">Carieres</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p> </p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Insere ton email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Nexus Partners</a>, All Right Reserved.
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">Nexus Partners</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="../../index.html">Acceuil</a>
+                                <a href="">Cookies</a>
+                                <a href="">Aides</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const correctButton = document.querySelector('.banner-content .btn');
+            const textInput = document.querySelector('.text-input');
+
+            correctButton.addEventListener('click', function () {
+                if (textInput.value.trim() === '') {
+                    alert('Veuillez entrer du texte avant de corriger.');
+                } else {
+                    alert('Texte envoyé pour correction ! Cette fonctionnalité sera bientôt disponible.');
+                }
+            });
+
+            const subscribeButtons = document.querySelectorAll('.plan .btn');
+            subscribeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const plan = this.closest('.plan').querySelector('h3').textContent;
+                    alert(`Merci de votre intérêt pour le ${plan}. La page d'inscription sera bientôt disponible.`);
+                });
+            });
+
+            const blogButtons = document.querySelectorAll('.blog-post .btn');
+            blogButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const articleTitle = this.closest('.blog-post').querySelector('h3').textContent;
+                    alert(`L'article "${articleTitle}" sera bientôt disponible. Restez à l'écoute !`);
+                });
+            });
+        });
+    </script>
+    <script>
+        function filterTools(category) {
+            let cards = document.querySelectorAll('.tool-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
